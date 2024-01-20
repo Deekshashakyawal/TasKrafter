@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Krafter</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <h1 class="logo">tas<span>Krafter.</span></h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><button type="button" class="mode">Change Mode</button></li>
+        <li>
+          <a href="#">My Tasks<i class="fas fa-caret-down"></i></a>
+          <div class="dropdown">
+            <ul>
+              <li><a href="#">For the Day</a></li>
+              <li><a href="#">For the Week</a></li>
+              <li><a href="#">For the Month</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Login/SignUp</a></li>
+      </ul>
+    </div>
+    <div class="tasks" id="container">
+      <div class="left" id="container-1">
+        <h2>Task for the Day</h2>
+        <ul class="taskList" id="taskList1"></ul>
+        <input
+          type="text"
+          class="taskInput"
+          id="taskInput1"
+          placeholder=" Enter a new task"
+        />
+        <button type="button" class="btn" id="btn1">Add Task</button>
+      </div>
+      <div class="main" id="container-2">
+        <h2>Task for the Month</h2>
+        <ul class="taskList" id="taskList2"></ul>
+        <input
+          type="text"
+          class="taskInput"
+          id="taskInput2"
+          placeholder=" Enter a new task"
+        />
+        <button type="button" class="btn" id="btn2">Add Task</button>
+      </div>
+      <div class="right" id="container-3">
+        <h2>Task for the Year</h2>
+        <ul class="taskList" id="taskList3"></ul>
+        <input
+          type="text"
+          class="taskInput"
+          id="taskInput3"
+          placeholder=" Enter a new task"
+        />
+        <button type="button" class="btn" id="btn3">Add Task</button>
+      </div>
+    </div>
+    <script src="javascript.js"></script>
+  </body>
+</html>
